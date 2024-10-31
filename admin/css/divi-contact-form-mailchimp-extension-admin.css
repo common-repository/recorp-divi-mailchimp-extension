@@ -1,0 +1,190 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ .switch label {
+	cursor: pointer;
+	font-family: Roboto,sans-serif;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: .5rem;
+}
+
+.switch label input[type="checkbox"] {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+[type="checkbox"]:checked, [type="checkbox"]:not(:checked) {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.switch label .lever {
+	content: "";
+	display: inline-block;
+	position: relative;
+	background-color: #818181;
+	border-radius: .9375rem;
+	margin-right: .625rem;
+	vertical-align: middle;
+	margin: 0 1rem;
+	width: 2.5rem;
+	height: .9375rem;
+	transition: background .3s ease;
+}
+
+.switch label input[type="checkbox"]:checked + .lever::after {
+	background-color: #64bf7d;
+	left: 1.5rem;
+}
+
+.switch label .lever::after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	background-color: #f1f1f1;
+	border-radius: 1.3125rem;
+	left: -.3125rem;
+	top: -.1875rem;
+	box-shadow: 0 .0625rem .1875rem .0625rem rgba(0,0,0,.4);
+	width: 1.3125rem;
+	height: 1.3125rem;
+	transition: left .3s ease,background .3s ease,box-shadow 1s ease;
+}
+
+.wc_in_de_btn{
+	cursor: pointer;
+}
+
+.mailchimp_rc_inputs .mailchimp_rc_input:nth-child(1) .minus_mc_field {
+	visibility: hidden;
+}
+
+.alert-success{
+	z-index: 999999 !important;
+}
+
+.modal-backdrop {
+	z-index: 9999;
+	opacity: 0.9;
+}
+
+#divi_mc_licensing {
+	z-index: 99999;
+}
+
+.tab-content .active.in {
+	opacity: 1;
+}
+
+#mailchimp .status {
+	display: inline-block;
+	margin-left: 1em;
+	padding: 3px 6px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	background-color: red;
+}
+
+#mailchimp .status.active {
+	background-color: #32cd32;
+}
+
+.loadersmall {
+	position: relative;
+	display: inline-block;
+	text-indent: -9999999px;
+	border: 3px solid rgba(0,0,0,.2);
+	border-left-color: #000;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation: spin 1.1s infinite linear;
+	animation: spin 1.1s infinite linear;
+	overflow: hidden;
+	border-radius: 50%;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	margin-bottom: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.hidden{
+	display: none;
+}
+
+#dcfme-list-fetcher {
+	margin: 10px 0;
+}
+
+@-webkit-keyframes spin {
+  0% { 
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% { 
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.multiselect-container.dropdown-menu [type="checkbox"]:checked, .multiselect-container.dropdown-menu [type="checkbox"]:not(:checked) {
+	position: relative;
+	opacity: 1;
+	pointer-events: none;
+}
+
+#forms.tab-pane .other_cell {
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+}
+
+.upgrade_your_plan h3{
+	color: red;
+}
+
+.description {
+	font-size: small;
+	font-style: italic;
+}
+
+#purchase {
+	background-color: #007bff;
+	border: none;
+	color: #ffffff;
+	padding: 3px 8px;
+	position: relative;
+	top: 2px;
+	border-radius: 3px;
+	border: 1px solid #0970df;
+}
+
+.mailchimp-tabs .nav-tabs .nav-link {
+	margin-bottom: -7px;
+}
